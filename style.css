@@ -1,3 +1,8 @@
+@font-face
+{
+    font-family: 'Roboto';
+    src: url('Roboto/Roboto-Regular.ttf') format('ttf');
+}
 body {
     margin: 0;
     padding: 0;
@@ -40,8 +45,9 @@ a:hover {
 }
 
 .bloc .container {
-    padding-left: 0;
+    padding-left: 0.5rem;
     padding-right: 0;
+    max-width: 95%;
 }
 
 .bloc-lg {
@@ -196,6 +202,8 @@ a:hover {
 .d-bloc .panel,
 .l-bloc {
     color: rgba(0, 0, 0, .5);
+    font-size: 1.4rem;
+    line-height: 2.5rem;
 }
 
 .d-bloc .panel button:hover,
@@ -281,6 +289,7 @@ a:hover {
 .row.row-no-gutters > [class*=" col-"] {
     padding-right: 0;
     padding-left: 0;
+    
 }
 
 #bloc-1-hero h1 {
@@ -361,6 +370,7 @@ a:hover {
     position: relative;
     z-index: 2;
 }
+
 
 @media (min-width: 768px) {
     .site-navigation {
@@ -476,7 +486,7 @@ button {
 }
 
 .icon-md {
-    font-size: 30px!important;
+    font-size: 40px!important;
 }
 
 .icon-lg {
@@ -508,6 +518,16 @@ button {
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
+    max-width: 95%;
+    width: 30%;
+}
+#input_504{
+    width: 90%;
+    height: 4rem;
+}
+#message{
+    width: 90%;
+    height: 5rem;
 }
 
 .scrollToTop {
@@ -676,10 +696,30 @@ a {
     margin: auto auto auto auto;
 }
 
-p {
-    font-size: 11px;
+ul {
+    list-style-type: none;
+    font-size: 1.5rem;
+    padding: 0rem;
+    line-height: 2rem;
+    color: rgba(0, 0, 0, .5);
 }
 
+img.header{
+    padding-left: 4rem;
+}
+div.navbar-header{
+    position: relative;
+}
+a.arrow{
+    position: absolute;
+    top: 5%;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+p{
+    font-size: 2.5rem;
+}
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
@@ -702,6 +742,9 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 h2 {
@@ -710,7 +753,7 @@ h2 {
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 2.5rem;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -737,6 +780,8 @@ h4 {
 
 .white {
     color: #FFFFFF!important;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .portfolio-thumb {
@@ -751,7 +796,24 @@ h4 {
 .avatar {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
+.tc-white {
+    color: #F3976C!important;
+}
+.white-text{
+    color: white!important;
+  
 
+}
+
+.text-cached1{
+    color: black!important;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+}
+.text-cached2{
+    color: black!important;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .black-background {
     background-color: rgba(165, 147, 99, 0.7);
     padding: 40px 40px 40px 40px;
@@ -774,9 +836,7 @@ h4 {
     background-color: #F3976C;
 }
 
-.tc-white {
-    color: #F3976C!important;
-}
+
 
 .btn-atomic-tangerine {
     background: #F3976C;
@@ -846,6 +906,54 @@ h4 {
     .nav-center.navbar .nav {
         max-width: 100%
     }
+    img.header{
+        padding-left: 6rem;
+        height: 5rem;
+    }
+    img.accueil{
+        padding: 0;
+        height: 7rem;
+    }
+    a.arrow{
+        font-size: 3.5rem;
+    }
+    #bloc-1-hero h1{
+        font-size: 6rem;
+    }
+    .center-block{
+        height: 15rem;
+        width: auto;
+    }
+    label{
+        font-size: 2.5rem;
+    }
+
+    .form-control{
+        height: 2.5rem;
+        width: 45%;
+    }
+    #input_504{
+        width: 90%;
+        height: 4rem;
+    }
+    #message{
+        width: 90%;
+        height: 6rem;
+    }
+
+    .cta-hero{
+        font-size: 40px;
+    }
+    ul{
+        font-size: 2rem;
+    }
+
+    .white-text{
+        font-size: 4rem;
+    }
+    .white{
+        font-size: 3rem;
+    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -857,6 +965,66 @@ h4 {
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
+    }
+
+    img.header{
+        padding-left: 6rem;
+        height: 7rem;
+    }
+    img.accueil{
+        padding: 0;
+        height: 10rem;
+    }
+
+    a.arrow{
+        font-size: 3.5rem;
+        top: 25%;
+    }
+    label{
+        font-size: 2.5rem;
+    }
+    #bloc-1-hero h1{
+        font-size: 6rem;
+    }
+    .center-block{
+        height: 15rem;
+        width: auto;
+    }
+
+    .form-control{
+        height: 2.5rem;
+        width: 45%;
+    }
+    #input_504{
+        width: 90%;
+        height: 4rem;
+    }
+    #message{
+        width: 90%;
+        height: 6rem;
+    }
+
+    .cta-hero{
+        font-size: 40px;
+    }
+    ul{
+        font-size: 2rem;
+    }
+    .white-text{
+        font-size: 4rem;
+    }
+    .white{
+        font-size: 3rem;
+    }
+    .icon-md{
+        font-size: 3.5rem!important;
+    }
+
+}
+
+@media (max-width: 280px) {
+    img.header{
+        padding-left: 3rem;
     }
 }
 
@@ -968,6 +1136,7 @@ h4 {
     .nav-invert .navbar-header {
         float: none;
         width: 100%;
+        
     }
     .nav-invert .navbar-toggle {
         float: left;
@@ -1032,6 +1201,9 @@ h4 {
     .bloc {
         padding-left: 0;
         padding-right: 0;
+    }
+    .white-text{
+        font-size: 3rem;
     }
 }
 
